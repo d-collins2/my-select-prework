@@ -3,7 +3,8 @@ def my_select(collection)
  array = Array.new 
  collection.each do |el| 
   if yield(el) == true 
-  array << el 
+    array << el 
+  end 
  end 
  array 
 end
